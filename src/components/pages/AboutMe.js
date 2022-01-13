@@ -1,13 +1,14 @@
 import React from "react";
+import Avatar from "../../assets/images/avatar.jpg";
 
 export default function AboutMe() {
   return (
-    <div class="about-me-container-fluid bg-1 text-center">
+    <div className="about-me-container-fluid bg-1 text-center">
       <h1>About Me</h1>
-      <div class="about-content">
+      <div className="about-content">
         <img
-          src="./assets/images/avatar.jpg"
-          class="img-circle"
+          src={Avatar}
+          className="img-circle"
           alt="Me and my husband"
           width="350"
           height="450"
