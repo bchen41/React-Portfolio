@@ -18,22 +18,41 @@ function NavTabs({ currentPage, handlePageChange }) {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">
-            <a className="nav-item nav-link active" href="#about-me">
-              About Me <span className="sr-only">(current)</span>
+            <a
+              href="#about-me"
+              onClick={() => handlePageChange("AboutMe")}
+              className={
+                currentPage === "AboutMe" ? "nav-link active" : "nav-link"
+              }
+            >
+              About Me
             </a>
-            <a className="nav-item nav-link active" href="#works">
+            <a
+              href="#portfolio"
+              onClick={() => handlePageChange("Portfolio")}
+              className={
+                currentPage === "Portfolio" ? "nav-link active" : "nav-link"
+              }
+            >
               Portfolio
             </a>
-            <a className="nav-item nav-link active" href="#contact-me">
+            <a
+              href="#contact-me"
+              onClick={() => handlePageChange("ContactMe")}
+              className={
+                currentPage === "ContactMe" ? "nav-link active" : "nav-link"
+              }
+            >
               Contact Me
             </a>
             <a
-              className="nav-item nav-link active"
-              href="./assets/bc-resume.pdf"
-              download
-              target="_blank"
+              href="#resume"
+              onClick={() => handlePageChange("Resume")}
+              className={
+                currentPage === "Resume" ? "nav-link active" : "nav-link"
+              }
             >
-              Download Resume
+              Resume
             </a>
           </div>
         </div>
