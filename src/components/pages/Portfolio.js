@@ -1,23 +1,25 @@
 import React from "react";
+import BTSQuiz from "../../assets/images/bts-quiz.png";
+import DayPlanner from "../../assets/images/dayplanner.png";
+import PokeFinder from "../../assets/images/pokefinder.png";
+import WeatherDash from "../../assets/images/weather-dashboard.png";
+import ComingSoon from "../../assets/images/coming-soon.jpg";
 
 export default function Portfolio() {
   return (
     <div id="cards_landscape_wrap-2">
-      <div class="container">
+      <div className="container">
         <h1>Portfolio</h1>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <div class="card-flyer">
-              <div class="text-box">
-                <div class="image-box">
+        <div className="row">
+          <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div className="card-flyer">
+              <div className="text-box">
+                <div className="image-box">
                   <a href="https://bchen41.github.io/BTS-Quiz/" target="_blank">
-                    <img
-                      src="./assets/images/bts-quiz.png"
-                      alt="Screenshot of BTS Quiz"
-                    />
+                    <img src={BTSQuiz} alt="Screenshot of BTS Quiz" />
                   </a>
                 </div>
-                <div class="text-container">
+                <div className="text-container">
                   <h6>BTS Quiz</h6>
                   <p>
                     A simple quiz that will display questions with their
@@ -38,21 +40,21 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <div class="card-flyer">
-              <div class="text-box">
-                <div class="image-box">
+          <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div className="card-flyer">
+              <div className="text-box">
+                <div className="image-box">
                   <a
                     href="https://bchen41.github.io/Day-Planner/"
                     target="_blank"
                   >
                     <img
-                      src="./assets/images/dayplanner.png"
+                      src={DayPlanner}
                       alt="Screenshot of Work Day Planner"
                     />
                   </a>
                 </div>
-                <div class="text-container">
+                <div className="text-container">
                   <h6>Work Day Planner</h6>
                   <p>
                     A day planner where users can store important events into
@@ -73,21 +75,21 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <div class="card-flyer">
-              <div class="text-box">
-                <div class="image-box">
+          <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div className="card-flyer">
+              <div className="text-box">
+                <div className="image-box">
                   <a
                     href="https://bchen41.github.io/PokeFinder/"
                     target="_blank"
                   >
                     <img
-                      src="./assets/images/pokefinder.png"
+                      src={PokeFinder}
                       alt="Screenshot of PokeFinder Webpage"
                     />
                   </a>
                 </div>
-                <div class="text-container">
+                <div className="text-container">
                   <h6>PokeFinder</h6>
                   <p>
                     A card and a list of encounter locations of the desired
@@ -108,21 +110,21 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <div class="card-flyer">
-              <div class="text-box">
-                <div class="image-box">
+          <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div className="card-flyer">
+              <div className="text-box">
+                <div className="image-box">
                   <a
                     href="https://bchen41.github.io/Weather-Dashboard/"
                     target="_blank"
                   >
                     <img
-                      src="./assets/images/weather-dashboard.png"
+                      src={WeatherDash}
                       alt="Screenshot of Weather Dashboard"
                     />
                   </a>
                 </div>
-                <div class="text-container">
+                <div className="text-container">
                   <h6>Weather Dashboard</h6>
                   <p>
                     Users can search for the weather outlook of multiple cities
@@ -142,14 +144,11 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <div class="card-flyer">
-              <div class="text-box">
-                <div class="image-box">
-                  <img
-                    src="./assets/images/coming-soon.jpg"
-                    alt="coming soon img"
-                  />
+          <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div className="card-flyer">
+              <div className="text-box">
+                <div className="image-box">
+                  <img src={ComingSoon} alt="coming soon img" />
                 </div>
               </div>
             </div>
