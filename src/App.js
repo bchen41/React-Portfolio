@@ -8,32 +8,36 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
-    const [currentPage, setCurrentPage] = useState("AboutMe");
+  const [currentPage, setCurrentPage] = useState("AboutMe");
 
-    const renderPage = () => {
-      if (currentPage === "AboutMe") {
-        return <AboutMe />;
-      }
-      if (currentPage === "Portfolio") {
-        return <Portfolio />;
-      }
-      if (currentPage === "ContactMe") {
-        return <ContactMe />;
-      }
-      if (currentPage === "Resume") {
-        return <Resume />;
-      }
-    };
-  
-    const handlePageChange = (page) => setCurrentPage(page);
+  const renderPage = () => {
+    if (currentPage === "AboutMe") {
+      return <AboutMe />;
+    }
+    if (currentPage === "Portfolio") {
+      return <Portfolio />;
+    }
+    if (currentPage === "ContactMe") {
+      return <ContactMe />;
+    }
+    if (currentPage === "Resume") {
+      return <Resume />;
+    }
+  };
 
-    return (
-        <div>
+  const handlePageChange = (page) => setCurrentPage(page);
+
+  return (
+    <div>
+      <div className="content-container">
         <Header handlePageChange={handlePageChange} currentPage={currentPage} />
         {renderPage()}
-        <Footer/>
-        </div>
-    )
-} 
+      </div>
+      <div className="footer--pin">
+        <Footer />
+      </div>
+    </div>
+  );
+}
 
 export default App;
