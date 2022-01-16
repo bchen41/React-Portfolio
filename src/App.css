@@ -4,9 +4,9 @@
   --darkmagenta: darkmagenta;
 }
 
-.container-fluid.container-padding-override {
+/* .container-fluid.container-padding-override {
   padding: 0;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -55,26 +55,12 @@ nav {
   color: var(--orange);
 }
 
-/* .component-container {
-  background: url("./assets/images/stars-unsplash.jpg") no-repeat center center
-    fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: max-content;
-} */
-
 .img-circle {
   border-radius: 50%;
 }
 
 .about-content {
   align-items: center;
-}
-
-.content-container {
-  margin: 20px;
 }
 
 .content-container h2 {
@@ -86,13 +72,8 @@ p {
   font-size: 22px;
 }
 
-/* .bg-1 {
-  color: #ffffff;
-} */
-
 .about-me-container-fluid {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 35px;
 }
 
 h2 {
@@ -107,32 +88,15 @@ h2 {
   text-align: center;
 }
 
-.icon-container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding-top: 20px;
-}
-
-.icon-container a {
-  color: var(--white);
+footer i {
+  padding: 0px 20px;
 }
 
 i:hover {
   transform: scale(1.15);
 }
 
-.fa-3x {
-  border: 5px solid var(--darkmagenta);
-  border-radius: 50%;
-  padding: 10px;
-  max-width: 100%;
-}
-
 footer {
-  padding: 30px;
-  clear: both;
-  text-align: center;
   color: var(--orange);
 }
 
@@ -230,4 +194,13 @@ h3 {
   font-family: "Roboto Black", sans-serif;
   letter-spacing: 1px;
   color: #00acc1;
+}
+
+.content-container {
+  min-height: calc(100vh - 150px);
+}
+.footer--pin {
+  position: relative;
+  left: 0;
+  bottom: 0;
 }
