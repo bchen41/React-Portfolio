@@ -1,22 +1,24 @@
 import React from "react";
 import Avatar from "../../assets/images/avatar.jpg";
 
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 export default function AboutMe() {
   return (
     <div className="text-center">
-      <h1>About Me</h1>
+      <div className="container">
+        <h1>About Me</h1>
+      </div>
       <Container className="about-container">
         <Row>
-          <Col lg={true} className="about-col">
-            <Image
+          <Col lg={true} className="about-img">
+            <img
               src={Avatar}
               className="img-circle fluid"
               alt="Me and my husband"
               width="350"
               height="450"
-            ></Image>
+            ></img>
           </Col>
           <Col lg={true}>
             <div>
