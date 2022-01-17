@@ -1,14 +1,11 @@
-:root {
-  --white: #ffffff;
-  --orange: orange;
-}
-
 span.navbar-brand {
   font-size: 50px;
+  font-family: "Bellerose", sans-serif;
 }
 
 .nav-link {
   font-size: 25px;
+  font-family: "Bellerose", sans-serif;
 }
 
 .nav-link::before {
@@ -16,9 +13,9 @@ span.navbar-brand {
 }
 
 .navbar-light .navbar-nav a.nav-link.active {
-  color: var(--orange);
+  color: #0d6efd;
 }
 
 .navbar-light .navbar-nav a.nav-link:hover {
-  color: var(--orange);
+  color: #0d6efd;
 }
