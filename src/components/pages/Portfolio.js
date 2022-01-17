@@ -5,6 +5,7 @@ import PokeFinder from "../../assets/images/pokefinder.png";
 import WeatherDash from "../../assets/images/weather-dashboard.png";
 import ComingSoon from "../../assets/images/coming-soon.jpg";
 import Project from "../Project";
+import { Container } from "react-bootstrap";
 
 export default function Portfolio() {
   const projects = [
@@ -40,15 +41,19 @@ export default function Portfolio() {
     },
   ];
   return (
-    <div id="cards_landscape_wrap-2">
-      <div className="container">
-        <h1>Portfolio</h1>
-        <div className="row">
-          {projects.map((project) => (
-            <Project {...project} />
-          ))}
+    <div className="container text-center">
+      <h1>Portfolio</h1>
+      <Container>
+        <div id="cards_landscape_wrap-2">
+          <div>
+            <div className="portfolio-container row">
+              {projects.map((project) => (
+                <Project {...project} />
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

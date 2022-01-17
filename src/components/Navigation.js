@@ -4,7 +4,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 
 function Navigation({ currentPage, handlePageChange }) {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg">
       <Container>
         <Navbar.Brand>Betty Chen</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
