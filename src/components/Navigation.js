@@ -1,24 +1,16 @@
 import React from "react";
+import "./css/Navigation.css";
+import { Navbar, Container, Nav } from "react-bootstrap";
 
 function Navigation({ currentPage, handlePageChange }) {
   return (
-    <header>
-      <nav className="navbar navbar-expand-lg navbar-light">
-        
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav ms-auto">
-            <a
+    <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand>Betty Chen</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link
               href="#about-me"
               onClick={() => handlePageChange("AboutMe")}
               className={
@@ -26,8 +18,8 @@ function Navigation({ currentPage, handlePageChange }) {
               }
             >
               About Me
-            </a>
-            <a
+            </Nav.Link>
+            <Nav.Link
               href="#portfolio"
               onClick={() => handlePageChange("Portfolio")}
               className={
@@ -35,8 +27,8 @@ function Navigation({ currentPage, handlePageChange }) {
               }
             >
               Portfolio
-            </a>
-            <a
+            </Nav.Link>
+            <Nav.Link
               href="#contact-me"
               onClick={() => handlePageChange("ContactMe")}
               className={
@@ -44,8 +36,8 @@ function Navigation({ currentPage, handlePageChange }) {
               }
             >
               Contact Me
-            </a>
-            <a
+            </Nav.Link>
+            <Nav.Link
               href="#resume"
               onClick={() => handlePageChange("Resume")}
               className={
@@ -53,11 +45,11 @@ function Navigation({ currentPage, handlePageChange }) {
               }
             >
               Resume
-            </a>
-          </div>
-        </div>
-      </nav>
-    </header>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
