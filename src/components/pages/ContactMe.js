@@ -22,18 +22,21 @@ const ContactMe = () => {
           <div className="text-md">
             {`We'll be in touch soon. Make sure to check your email at ${email} for updates!`}
           </div>
-          <img src={ThanksImg} width={800}></img>
+          <img
+            src={ThanksImg}
+            alt="words thank you in cursive"
+            width={800}
+          ></img>
         </div>
       </>
     );
   }
 
   return (
-    <Container>
+    <Container className="text-center">
+      <h1>Contact Me</h1>
       <Row>
-        <Form className="text-center" onSubmit={handleSubmit}>
-          <h1>Contact Me</h1>
-
+        <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Name</Form.Label>
             <Form.Control
@@ -79,7 +82,7 @@ const ContactMe = () => {
             <Form.Text className="text-muted"></Form.Text>
           </Form.Group>
 
-          <Button type="submit">Submit</Button>
+          <Button type="submit">Send Message</Button>
         </Form>
       </Row>
     </Container>
