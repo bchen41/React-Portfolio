@@ -1,19 +1,14 @@
 import React from "react";
 import { Container, Row, Col, Card, ListGroup } from "react-bootstrap";
-
+import resume from "../../assets/bc-resume.pdf";
 export default function Resume() {
   return (
     <Container className="text-center">
+      <h1>Resume</h1>
       <Row>
-        <h1>Resume</h1>
         <p>
           Download my{" "}
-          <a
-            className="resume"
-            href="./assets/bc-resume.pdf"
-            download
-            target="_blank"
-          >
+          <a className="resume" href={resume} download>
             resume
           </a>
           !
