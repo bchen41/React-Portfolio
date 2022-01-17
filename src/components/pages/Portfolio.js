@@ -3,7 +3,6 @@ import BTSQuiz from "../../assets/images/bts-quiz.png";
 import DayPlanner from "../../assets/images/dayplanner.png";
 import PokeFinder from "../../assets/images/pokefinder.png";
 import WeatherDash from "../../assets/images/weather-dashboard.png";
-import ComingSoon from "../../assets/images/coming-soon.jpg";
 import Project from "../Project";
 import { Container } from "react-bootstrap";
 
@@ -32,12 +31,6 @@ export default function Portfolio() {
       demoLink: "https://bchen41.github.io/Weather-Dashboard/",
       githubLink: "https://github.com/bchen41/Weather-Dashboard",
       projectImg: WeatherDash,
-    },
-    {
-      title: "",
-      demoLink: "#",
-      githubLink: "#",
-      projectImg: ComingSoon,
     },
   ];
   return (
