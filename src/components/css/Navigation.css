@@ -1,0 +1,24 @@
+:root {
+  --white: #ffffff;
+  --orange: orange;
+}
+
+span.navbar-brand {
+  font-size: 50px;
+}
+
+.nav-link {
+  font-size: 25px;
+}
+
+.nav-link::before {
+  content: "💫";
+}
+
+.navbar-light .navbar-nav a.nav-link.active {
+  color: var(--orange);
+}
+
+.navbar-light .navbar-nav a.nav-link:hover {
+  color: var(--orange);
+}
