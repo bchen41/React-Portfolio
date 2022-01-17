@@ -1,13 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
     <footer className="text-center">
       <h3>Made with ❤️️ by Betty Chen</h3>
-      <div className="text-center">
+      <div>
         <div className="icon-container">
           <a
             href="mailto:bettychen41@outlook.com"
@@ -29,7 +29,7 @@ export default function Footer() {
           </a>
           <a href="https://github.com/bchen41" target="_blank" rel="noreferrer">
             <i className="fab fa-github fa-3x">
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon icon={faGithubSquare} />
             </i>
           </a>
         </div>
