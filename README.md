@@ -27,7 +27,7 @@ Click [here](https://bchen41.github.io/react-portfolio/) for the deployed applic
 
 ![badge](https://img.shields.io/badge/license-MIT-blue)
 <br/>
-Copyright © 2021 [Betty Chen](https://github.com/bchen41). <br />
+Copyright © 2022 [Betty Chen](https://github.com/bchen41). <br />
 This project is [MIT](https://github.com/bchen41/react-portfolio/blob/main/LICENSE) licensed.
 
 ## Contributing
