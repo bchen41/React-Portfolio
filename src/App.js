@@ -29,10 +29,10 @@ function App() {
 
   return (
     <div>
-      <div className="content-container">
+      <div>
         <Header handlePageChange={handlePageChange} currentPage={currentPage} />
-        {renderPage()}
       </div>
+      <div className="content-container">{renderPage()}</div>
       <div className="footer--pin">
         <Footer />
       </div>
