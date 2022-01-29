@@ -28,7 +28,7 @@ function Navigation({ currentPage, handlePageChange }) {
             >
               Portfolio
             </Nav.Link>
-            {/* <Nav.Link
+            <Nav.Link
               href="#contact-me"
               onClick={() => handlePageChange("ContactMe")}
               className={
@@ -36,7 +36,7 @@ function Navigation({ currentPage, handlePageChange }) {
               }
             >
               Contact Me
-            </Nav.Link> */}
+            </Nav.Link>
             <Nav.Link
               href="#resume"
               onClick={() => handlePageChange("Resume")}
