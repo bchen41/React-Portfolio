@@ -3,6 +3,7 @@
 ![badge](https://img.shields.io/badge/license-MIT-blue)<br/>
 
 - [Description](#description)
+- [Usage](#usage)
 - [Screenshots](#screenshots)
 - [GitHub](#github)
 - [Lincense](#license)
@@ -12,6 +13,10 @@
 ## Description
 
 Created my first React Portfolio using React components. Instead of having a static portfolio, I learned about displaying different pages using components. React makes it so it is possible to re-use code components to increase efficiency when developing apps. Mobile responsiveness and UI was achieved using React Bootstrap.
+
+## Usage
+
+After cloning the repository, in the root folder, run "npm i" for the necessary npm packages that are already listed in the package.json files. Next, run "npm start" which will automatically open a browser tab to view this application.
 
 ## Screenshots
 
