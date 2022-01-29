@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card, ListGroup } from "react-bootstrap";
-import resume from "../../assets/bc-resume.pdf";
+
+import BCResume from "../../assets/bc-resume.pdf";
 export default function Resume() {
   return (
     <Container className="text-center">
@@ -8,7 +9,7 @@ export default function Resume() {
       <Row>
         <p>
           Download my{" "}
-          <a className="resume" href={resume} download>
+          <a className="resume" href={BCResume} download>
             resume
           </a>
           !
