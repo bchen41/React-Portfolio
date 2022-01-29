@@ -40,8 +40,10 @@ export default function Portfolio() {
         <div id="cards_landscape_wrap-2">
           <div>
             <div className="portfolio-container row">
-              {projects.map((project) => (
-                <Project {...project} />
+              {projects.map((project, index) => (
+                <div key={index}>
+                  <Project {...project} />
+                </div>
               ))}
             </div>
           </div>

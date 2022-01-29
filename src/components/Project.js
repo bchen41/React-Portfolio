@@ -12,12 +12,10 @@ export default function Project({ title, demoLink, githubLink, projectImg }) {
               <img src={projectImg} alt="Screenshot of BTS Quiz" />
             </div>
           </div>
-
           <div className="img-description">
             <a href={demoLink} target="_blank" rel="noreferrer">
               <div className="portfolio-title">{title}</div>
             </a>
-
             <a href={githubLink} target="_blank" rel="noreferrer">
               <i className="fab fa-github fa-3x">
                 <FontAwesomeIcon className="githubicon" icon={faGithub} />
