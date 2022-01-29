@@ -11,7 +11,7 @@
 
 ## Description
 
-My first React Portfolio deployed on GitHub Pages. This application currently does not include a back-end or connect to an API.
+Created my first React Portfolio using React components. Instead of having a static portfolio, I learned about displaying different pages using components. React makes it so it is possible to re-use code components to increase efficiency when developing apps. Mobile responsiveness and UI was achieved using React Bootstrap.
 
 ## Screenshots
 
