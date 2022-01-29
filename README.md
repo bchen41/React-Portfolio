@@ -12,7 +12,7 @@
 
 ## Description
 
-Created my first React Portfolio using React components. Instead of having a static portfolio, I learned about displaying different pages using components. React makes it so it is possible to re-use code components to increase efficiency when developing apps. Mobile responsiveness and UI was achieved using React Bootstrap.
+Created my first React Portfolio using React components. Instead of having a static portfolio, I learned about displaying different pages using components. React makes it so it is possible to re-use code components to increase efficiency when developing apps. Mobile responsiveness and UI was achieved using React Bootstrap. Currently, there is no back-end involved so I hope to implement that in the future.
 
 ## Usage
 
