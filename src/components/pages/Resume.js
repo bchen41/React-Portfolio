@@ -1,18 +1,21 @@
 import React from "react";
 import { Container, Row, Col, Card, ListGroup } from "react-bootstrap";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 import BCResume from "../../assets/bc-resume.pdf";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Resume() {
   return (
     <Container className="text-center">
       <h1>Resume</h1>
       <Row>
         <p>
-          Download my{" "}
+          Download my resume:{" "}
           <a className="resume" href={BCResume} download>
-            resume
+            <i className="fas fa-download fa">
+              <FontAwesomeIcon icon={faDownload} />
+            </i>
           </a>
-          !
         </p>
         <h3>Proficiencies</h3>
       </Row>
