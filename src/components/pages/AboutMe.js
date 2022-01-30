@@ -23,19 +23,21 @@ export default function AboutMe() {
           <Col lg={true}>
             <div>
               <p>
-                My name is Betty Chen and I was born in Manhattan, NY, but spent
-                most of my childhood in Buffalo, NY. After a couple of years, my
-                family moved to Ridgewood, NJ, where I stayed until I graduated
-                from high school. I then graduated from UCONN with a bachelor's
-                in Molecular and Cell Biology. After that, I worked in a
-                pharmaceutical industry for one year and then a chemical
-                laboratory for two years. I am now learning how to be a web
-                developer through Rutgers Coding Bootcamp.
+                I am a Full Stack Developer with a bachelor's degree in
+                Molecular and Cell Biology from University of Connecticut. I
+                have experience in the pharmaceutical and chemical industry as
+                an analytical technician. I have taken the opportunity during
+                the pandemic to pivot my career path towards software
+                engineering. I underwent a challenging 3-month Full Stack Web
+                Development program through the Rutgers University Coding
+                Bootcamp, with newly developed skills using MongoDB, Express.js,
+                Node.js, React.js., RESTful APIs and creating
+                responsive/polished UI web design.
               </p>
               <p>
                 I enjoy eating all kinds of foods, such as Korean BBQ and sushi.
-                watching shows, reading webtoons,playing games, baking,listening
-                to music, and dancing. My number one favorite band is BTS 💜.
+                watching shows, reading webtoons, baking, and listening to
+                music. My favorite band is BTS 💜.
               </p>
             </div>
           </Col>
