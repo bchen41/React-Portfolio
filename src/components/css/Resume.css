@@ -1,0 +1,20 @@
+.resume-icons {
+  padding: 0 10px 0 10px;
+}
+
+.resume-icon-container {
+  justify-content: center;
+}
+
+/* .resume-logo {
+  width: 45px;
+} */
+
+/* .padtop {
+  padding-top: 15px;
+} */
+
+.logo-card-container {
+  flex-direction: column;
+  align-content: center;
+}
