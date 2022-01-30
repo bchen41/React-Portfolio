@@ -7,7 +7,6 @@ export default function Footer() {
   return (
     <div className="footer-container">
       <footer className="text-center">
-        <h5>Made with ❤️️ by Betty Chen</h5>
         <div>
           <div className="icon-container">
             <a
@@ -15,7 +14,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fab fa-envelope fa-3x">
+              <i className="fas fa-envelope fa-3x">
                 <FontAwesomeIcon className="footer-icons" icon={faEnvelope} />
               </i>
             </a>
@@ -42,6 +41,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
+        <h5>Betty Chen's React Portfolio © {new Date().getFullYear()}</h5>
       </footer>
     </div>
   );
