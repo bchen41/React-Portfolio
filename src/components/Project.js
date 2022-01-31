@@ -2,7 +2,14 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-export default function Project({ title, demoLink, githubLink, projectImg }) {
+export default function Project({
+  title,
+  demoLink,
+  githubLink,
+  projectImg,
+  description,
+  technologies,
+}) {
   return (
     <React.Fragment>
       <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
@@ -23,6 +30,8 @@ export default function Project({ title, demoLink, githubLink, projectImg }) {
             </a>
           </div>
         </div>
+        <p>{description}</p>
+        <h6>{technologies}</h6>
       </div>
     </React.Fragment>
   );
