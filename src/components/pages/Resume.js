@@ -18,7 +18,7 @@ import {
   faGitAlt,
   faNodeJs,
 } from "@fortawesome/free-brands-svg-icons";
-import BCResume from "../../assets/bc-resume.pdf";
+import BCResume from "../../assets/bc-resume-2022.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../css/Resume.css";
 import MongoDB from "../../assets/images/mongodb.svg";
