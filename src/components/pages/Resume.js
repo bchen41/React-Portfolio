@@ -1,5 +1,13 @@
 import React from "react";
-import { Container, Row, Col, Card, ListGroup } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  ListGroup,
+  OverlayTrigger,
+  Tooltip,
+} from "react-bootstrap";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import {
   faHtml5,
@@ -32,8 +40,9 @@ export default function Resume() {
             </i>
           </a>
         </p>
-        <h3>Proficiencies</h3>
       </Row>
+      <h3>Proficiencies</h3>
+      <br></br>
       <Row className="logo-card-container">
         <Col>
           <Card>
@@ -41,84 +50,171 @@ export default function Resume() {
             <ListGroup variant="flush">
               <ListGroup.Item className="d-flex resume-icon-container">
                 <div className="resume-icons">
-                  <i className="fab fa-html5 fa-3x">
-                    <FontAwesomeIcon icon={faHtml5} />
-                  </i>
+                  <OverlayTrigger
+                    placement={"bottom"}
+                    overlay={<Tooltip id={`tooltip-${"bottom"}`}>HTML</Tooltip>}
+                  >
+                    <i className="fab fa-html5 fa-3x">
+                      <FontAwesomeIcon icon={faHtml5} />
+                    </i>
+                  </OverlayTrigger>
                 </div>
                 <div className="resume-icons">
-                  <i className="fab fa-css3 fa-3x">
-                    <FontAwesomeIcon icon={faCss3} />
-                  </i>
+                  <OverlayTrigger
+                    placement={"bottom"}
+                    overlay={<Tooltip id={`tooltip-${"bottom"}`}>CSS</Tooltip>}
+                  >
+                    <i className="fab fa-css3 fa-3x">
+                      <FontAwesomeIcon icon={faCss3} />
+                    </i>
+                  </OverlayTrigger>
                 </div>
                 <div className="resume-icons">
-                  <i className="fab fa-js-square fa-3x">
-                    <FontAwesomeIcon icon={faJsSquare} />
-                  </i>
+                  <OverlayTrigger
+                    placement={"bottom"}
+                    overlay={
+                      <Tooltip id={`tooltip-${"bottom"}`}>Javascript</Tooltip>
+                    }
+                  >
+                    <i className="fab fa-js-square fa-3x">
+                      <FontAwesomeIcon icon={faJsSquare} />
+                    </i>
+                  </OverlayTrigger>
                 </div>
                 <div className="resume-icons">
-                  <i className="fab fa-react fa-3x">
-                    <FontAwesomeIcon icon={faReact} />
-                  </i>
+                  <OverlayTrigger
+                    placement={"bottom"}
+                    overlay={
+                      <Tooltip id={`tooltip-${"bottom"}`}>React</Tooltip>
+                    }
+                  >
+                    <i className="fab fa-react fa-3x">
+                      <FontAwesomeIcon icon={faReact} />
+                    </i>
+                  </OverlayTrigger>
                 </div>
                 <div className="resume-icons">
-                  <i className="fab fa-bootstrap fa-3x">
-                    <FontAwesomeIcon icon={faBootstrap} />
-                  </i>
+                  <OverlayTrigger
+                    placement={"bottom"}
+                    overlay={
+                      <Tooltip id={`tooltip-${"bottom"}`}>Bootstrap</Tooltip>
+                    }
+                  >
+                    <i className="fab fa-bootstrap fa-3x">
+                      <FontAwesomeIcon icon={faBootstrap} />
+                    </i>
+                  </OverlayTrigger>
                 </div>
                 <div className="resume-icons">
-                  <i className="fab fa-git-alt fa-3x">
-                    <FontAwesomeIcon icon={faGitAlt} />
-                  </i>
+                  <OverlayTrigger
+                    placement={"bottom"}
+                    overlay={<Tooltip id={`tooltip-${"bottom"}`}>Git</Tooltip>}
+                  >
+                    <i className="fab fa-git-alt fa-3x">
+                      <FontAwesomeIcon icon={faGitAlt} />
+                    </i>
+                  </OverlayTrigger>
                 </div>
+
                 <div>
-                  <img
-                    src={JQuery}
-                    style={{ width: "65px", paddingTop: "12px" }}
-                  />
+                  <OverlayTrigger
+                    placement={"bottom"}
+                    overlay={
+                      <Tooltip id={`tooltip-${"bottom"}`}>jQuery</Tooltip>
+                    }
+                  >
+                    <img
+                      src={JQuery}
+                      style={{ width: "65px", paddingTop: "12px" }}
+                    />
+                  </OverlayTrigger>
                 </div>
               </ListGroup.Item>
             </ListGroup>
           </Card>
         </Col>
+        <br></br>
         <Col>
           <Card>
             <Card.Header>Back-End</Card.Header>
             <ListGroup variant="flush">
               <ListGroup.Item className="d-flex resume-icon-container">
                 <div className="resume-icons">
-                  <i className="fab fa-node-js fa-3x">
-                    <FontAwesomeIcon icon={faNodeJs} />
-                  </i>
+                  <OverlayTrigger
+                    placement={"bottom"}
+                    overlay={
+                      <Tooltip id={`tooltip-${"bottom"}`}>Node.js</Tooltip>
+                    }
+                  >
+                    <i className="fab fa-node-js fa-3x">
+                      <FontAwesomeIcon icon={faNodeJs} />
+                    </i>
+                  </OverlayTrigger>
                 </div>
                 <div className="resume-icons">
-                  <img
-                    src={MongoDB}
-                    style={{ width: "45px", paddingTop: "15px" }}
-                  />
+                  <OverlayTrigger
+                    placement={"bottom"}
+                    overlay={
+                      <Tooltip id={`tooltip-${"bottom"}`}>MongoDB</Tooltip>
+                    }
+                  >
+                    <img
+                      src={MongoDB}
+                      style={{ width: "45px", paddingTop: "15px" }}
+                    />
+                  </OverlayTrigger>
                 </div>
                 <div>
-                  <img
-                    src={MongooseODM}
-                    style={{ width: "65px", paddingTop: "5px" }}
-                  />
+                  <OverlayTrigger
+                    placement={"bottom"}
+                    overlay={
+                      <Tooltip id={`tooltip-${"bottom"}`}>Mongoose</Tooltip>
+                    }
+                  >
+                    <img
+                      src={MongooseODM}
+                      style={{ width: "65px", paddingTop: "5px" }}
+                    />
+                  </OverlayTrigger>
                 </div>
                 <div>
-                  <img
-                    src={Express}
-                    style={{ width: "85px", paddingTop: "7px" }}
-                  />
+                  <OverlayTrigger
+                    placement={"bottom"}
+                    overlay={
+                      <Tooltip id={`tooltip-${"bottom"}`}>Express.js</Tooltip>
+                    }
+                  >
+                    <img
+                      src={Express}
+                      style={{ width: "85px", paddingTop: "7px" }}
+                    />
+                  </OverlayTrigger>
                 </div>
                 <div>
-                  <img
-                    src={MySQL}
-                    style={{ width: "55px", paddingTop: "9px" }}
-                  />
+                  <OverlayTrigger
+                    placement={"bottom"}
+                    overlay={
+                      <Tooltip id={`tooltip-${"bottom"}`}>MySQL</Tooltip>
+                    }
+                  >
+                    <img
+                      src={MySQL}
+                      style={{ width: "50px", paddingTop: "12px" }}
+                    />
+                  </OverlayTrigger>
                 </div>
                 <div className="resume-icons">
-                  <img
-                    src={GraphQL}
-                    style={{ width: "52px", paddingTop: "7px" }}
-                  />
+                  <OverlayTrigger
+                    placement={"bottom"}
+                    overlay={
+                      <Tooltip id={`tooltip-${"bottom"}`}>GraphQL</Tooltip>
+                    }
+                  >
+                    <img
+                      src={GraphQL}
+                      style={{ width: "45px", paddingTop: "12px" }}
+                    />
+                  </OverlayTrigger>
                 </div>
               </ListGroup.Item>
             </ListGroup>

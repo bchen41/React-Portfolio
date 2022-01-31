@@ -6,15 +6,35 @@
   justify-content: center;
 }
 
-/* .resume-logo {
-  width: 45px;
-} */
-
-/* .padtop {
-  padding-top: 15px;
-} */
-
 .logo-card-container {
   flex-direction: column;
   align-content: center;
+}
+
+.fa-html5 {
+  color: rgb(255, 102, 0);
+}
+
+.fa-css3 {
+  color: rgb(0, 110, 255);
+}
+
+.fa-js-square {
+  color: rgba(255, 230, 0, 0.883);
+}
+
+.fa-react {
+  color: aqua;
+}
+
+.fa-bootstrap {
+  color: rgb(155, 1, 155);
+}
+
+.fa-git-alt {
+  color: rgb(255, 17, 0);
+}
+
+.fa-node-js {
+  color: greenyellow;
 }
