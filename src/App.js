@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import AboutMe from "./components/pages/AboutMe";
 import Portfolio from "./components/pages/Portfolio";
-import ContactMe from "./components/pages/ContactMe";
+// import ContactMe from "./components/pages/ContactMe";
 import Resume from "./components/pages/Resume";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -17,9 +17,9 @@ function App() {
     if (currentPage === "Portfolio") {
       return <Portfolio />;
     }
-    if (currentPage === "ContactMe") {
-      return <ContactMe />;
-    }
+    // if (currentPage === "ContactMe") {
+    //   return <ContactMe />;
+    // }
     if (currentPage === "Resume") {
       return <Resume />;
     }
