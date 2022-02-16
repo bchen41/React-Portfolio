@@ -18,7 +18,7 @@ import {
   faGitAlt,
   faNodeJs,
 } from "@fortawesome/free-brands-svg-icons";
-import BCResume from "../../assets/bc-resume-2022.pdf";
+import BCResume from "../../assets/bc-resume-2022v2.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../css/Resume.css";
 import MongoDB from "../../assets/images/mongodb.svg";
@@ -125,6 +125,7 @@ export default function Resume() {
                   >
                     <img
                       src={JQuery}
+                      alt="jquery logo"
                       style={{ width: "65px", paddingTop: "12px" }}
                     />
                   </OverlayTrigger>
@@ -160,6 +161,7 @@ export default function Resume() {
                   >
                     <img
                       src={MongoDB}
+                      alt="mongodb logo"
                       style={{ width: "45px", paddingTop: "15px" }}
                     />
                   </OverlayTrigger>
@@ -173,6 +175,7 @@ export default function Resume() {
                   >
                     <img
                       src={MongooseODM}
+                      alt="mongooseodm logo"
                       style={{ width: "65px", paddingTop: "5px" }}
                     />
                   </OverlayTrigger>
@@ -186,6 +189,7 @@ export default function Resume() {
                   >
                     <img
                       src={Express}
+                      alt="express logo"
                       style={{ width: "85px", paddingTop: "7px" }}
                     />
                   </OverlayTrigger>
@@ -199,6 +203,7 @@ export default function Resume() {
                   >
                     <img
                       src={MySQL}
+                      alt="mysql logo"
                       style={{ width: "50px", paddingTop: "12px" }}
                     />
                   </OverlayTrigger>
@@ -212,6 +217,7 @@ export default function Resume() {
                   >
                     <img
                       src={GraphQL}
+                      alt="graphql logo"
                       style={{ width: "45px", paddingTop: "12px" }}
                     />
                   </OverlayTrigger>
