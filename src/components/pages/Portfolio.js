@@ -37,15 +37,15 @@ export default function Portfolio() {
       description: `A search will show a card and list of encounter locations of the desired Pokémon. A search history is rendered to view previous searches.`,
       technologies: `HTML, CSS, Javascript, ZURB Foundation, Poke/PokemonTCG APIs`,
     },
-    {
-      title: "Day Planner",
-      demoLink: "https://bchen41.github.io/Day-Planner/",
-      githubLink: "https://github.com/bchen41/Day-Planner",
-      projectImg: DayPlanner,
-      description: `A day planner where users can store important events into their busy
-      work schedule so that they can manage their time effectively.`,
-      technologies: `HTML, CSS, jQuery, Moment.js, Font Awesome, Bootstrap`,
-    },
+    // {
+    //   title: "Day Planner",
+    //   demoLink: "https://bchen41.github.io/Day-Planner/",
+    //   githubLink: "https://github.com/bchen41/Day-Planner",
+    //   projectImg: DayPlanner,
+    //   description: `A day planner where users can store important events into their busy
+    //   work schedule so that they can manage their time effectively.`,
+    //   technologies: `HTML, CSS, jQuery, Moment.js, Font Awesome, Bootstrap`,
+    // },
     {
       title: "BTS Quiz",
       demoLink: "https://bchen41.github.io/BTS-Quiz/",
@@ -61,42 +61,6 @@ export default function Portfolio() {
     <div className="container text-center">
       <h1>Portfolio</h1>
       <Container>
-        <Carousel
-          fade
-          interval={8000}
-          style={{
-            marginTop: "30px",
-          }}
-        >
-          {/* <Carousel.Item>
-            <ExampleCarouselImage text="First slide" />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <ExampleCarouselImage text="Second slide" />
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <ExampleCarouselImage text="Third slide" />
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item> */}
-          {projects.map((p, idx) => (
-            <Carousel.Item>
-              <Image src={p.projectImg} thumbnail fluid></Image>
-            </Carousel.Item>
-          ))}
-        </Carousel>
         <div id="cards_landscape_wrap-2">
           <div className="portfolio-container row">
             {projects.map((project, index) => (
