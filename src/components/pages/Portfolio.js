@@ -2,13 +2,22 @@ import React from "react";
 import BTSQuiz from "../../assets/images/bts-quiz.png";
 import DayPlanner from "../../assets/images/dayplanner.png";
 import PokeFinder from "../../assets/images/pokefinder.png";
-
+import Inquerii from "../../assets/images/inquerii.png";
 import AnimalPalace from "../../assets/images/animal-palace-home.png";
 import Project from "../Project";
-import { Container } from "react-bootstrap";
+import { Carousel, CarouselItem, Container, Image } from "react-bootstrap";
 
 export default function Portfolio() {
   const projects = [
+    {
+      title: "Inquerii",
+      demoLink: "https://inquerii.com/",
+      githubLink: null,
+      projectImg: Inquerii,
+      description:
+        "Micro-consulting platform to lend your expertise while earning money and expanding your network",
+      technologies: "React, MongoDB, Nodejs, AWS",
+    },
     {
       title: "Animal Palace",
       demoLink: "https://animal-palace-donation.herokuapp.com/",
@@ -52,6 +61,42 @@ export default function Portfolio() {
     <div className="container text-center">
       <h1>Portfolio</h1>
       <Container>
+        <Carousel
+          fade
+          interval={8000}
+          style={{
+            marginTop: "30px",
+          }}
+        >
+          {/* <Carousel.Item>
+            <ExampleCarouselImage text="First slide" />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <ExampleCarouselImage text="Second slide" />
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <ExampleCarouselImage text="Third slide" />
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item> */}
+          {projects.map((p, idx) => (
+            <Carousel.Item>
+              <Image src={p.projectImg} thumbnail fluid></Image>
+            </Carousel.Item>
+          ))}
+        </Carousel>
         <div id="cards_landscape_wrap-2">
           <div className="portfolio-container row">
             {projects.map((project, index) => (
