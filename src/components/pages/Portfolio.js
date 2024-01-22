@@ -2,13 +2,22 @@ import React from "react";
 import BTSQuiz from "../../assets/images/bts-quiz.png";
 import DayPlanner from "../../assets/images/dayplanner.png";
 import PokeFinder from "../../assets/images/pokefinder.png";
-
+import Inquerii from "../../assets/images/inquerii.png";
 import AnimalPalace from "../../assets/images/animal-palace-home.png";
 import Project from "../Project";
-import { Container } from "react-bootstrap";
+import { Carousel, CarouselItem, Container, Image } from "react-bootstrap";
 
 export default function Portfolio() {
   const projects = [
+    {
+      title: "Inquerii",
+      demoLink: "https://inquerii.com/",
+      githubLink: null,
+      projectImg: Inquerii,
+      description:
+        "Micro-consulting platform to lend your expertise while earning money and expanding your network",
+      technologies: "React, MongoDB, Nodejs, AWS",
+    },
     {
       title: "Animal Palace",
       demoLink: "https://animal-palace-donation.herokuapp.com/",
@@ -28,15 +37,15 @@ export default function Portfolio() {
       description: `A search will show a card and list of encounter locations of the desired Pokémon. A search history is rendered to view previous searches.`,
       technologies: `HTML, CSS, Javascript, ZURB Foundation, Poke/PokemonTCG APIs`,
     },
-    {
-      title: "Day Planner",
-      demoLink: "https://bchen41.github.io/Day-Planner/",
-      githubLink: "https://github.com/bchen41/Day-Planner",
-      projectImg: DayPlanner,
-      description: `A day planner where users can store important events into their busy
-      work schedule so that they can manage their time effectively.`,
-      technologies: `HTML, CSS, jQuery, Moment.js, Font Awesome, Bootstrap`,
-    },
+    // {
+    //   title: "Day Planner",
+    //   demoLink: "https://bchen41.github.io/Day-Planner/",
+    //   githubLink: "https://github.com/bchen41/Day-Planner",
+    //   projectImg: DayPlanner,
+    //   description: `A day planner where users can store important events into their busy
+    //   work schedule so that they can manage their time effectively.`,
+    //   technologies: `HTML, CSS, jQuery, Moment.js, Font Awesome, Bootstrap`,
+    // },
     {
       title: "BTS Quiz",
       demoLink: "https://bchen41.github.io/BTS-Quiz/",
